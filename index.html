@@ -29,15 +29,22 @@
     <br/>
     <br/>
     <h2 class="title">
-     YourCompany own PyPi
+     Brusia's PyPi
     </h2>
    </section>
    <br/>
    <p>
-    Welcome to the private Python package index of YourCompany !
+    Welcome to the private Python package index of Brusia!
     <br/>
-    You can install packages with :
-    <pre><code>pip install &lt;package_name&gt; --extra-index-url https://astariul.github.io/github-hosted-pypi/</code></pre>
+    You can configure your pyproject.toml with
+    <pre><code>[[tool.uv.index]]
+name = "brusia-index"
+url = "https://brusia.github.io/github-hosted-pypi/"
+</code></pre>
+    <br/>
+    Or use 
+   <pre><code>
+    uv add &lt;package_name&gt; --extra-index-url https://brusia.github.io/github-hosted-pypi/
    </p>
    <hr/>
    <h6 class="text-header">
