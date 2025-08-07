@@ -50,7 +50,7 @@ jobs:
       - name: Install public-hello
         run: |
           python -m pip install --upgrade pip
-          pip install public-hello --extra-index-url https://astariul.github.io/github-hosted-pypi/
+          pip install public-hello --extra-index-url https://brusia.github.io/github-hosted-pypi/
 
           # Check if the package and its dependency was installed
           pip show public-hello
@@ -61,7 +61,7 @@ jobs:
       - name: Install public-hello older version
         run: |
           python -m pip install --upgrade pip
-          pip install public-hello==0.1 --extra-index-url https://astariul.github.io/github-hosted-pypi/
+          pip install public-hello==0.1 --extra-index-url https://brusia.github.io/github-hosted-pypi/
 
           # Check if the package was installed
           pip show public-hello
